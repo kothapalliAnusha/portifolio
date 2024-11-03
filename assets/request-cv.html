@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request CV</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .cv-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    .cv-container h2 {
+      color: #f39c12;
+      margin-bottom: 1rem;
+    }
+    .cv-container p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    .cv-container a {
+      color: #f39c12;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cv-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function showMessage() {
+      document.getElementById("cv-message").classList.remove("hidden-message");
+    }
+  </script>
+</head>
+<body>
+
+  <div class="cv-container">
+    <h2>Request My CV</h2>
+    <button class="download-btn" onclick="showMessage()"></button>
+    <p id="cv-message" class="hidden-message">
+      For a copy of my CV, please feel free to contact me directly via email at
+      <a href="mailto:your-email@example.com">kothapallianusha987@gmail.com</a>. I’ll be happy to provide the document upon request.
+    </p>
+  </div>
+
+</body>
+</html>
